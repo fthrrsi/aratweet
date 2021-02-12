@@ -20,7 +20,7 @@ def start():
                     # if you want to turn off the case sensitive like: priktiw, Prikitiw, pRiKiTiw
                     # just use lower(message) and check it, but please remove the replace function line
                     if "(ara)" in message:
-                        message = message.replace("(ara)", " ")
+                        message = message.replace("(ara)","")
                         if len(message) is not 0:
                             if dms[i]['media'] is None:
                                 print("DM will be posted")
